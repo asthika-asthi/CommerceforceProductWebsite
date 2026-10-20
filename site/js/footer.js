@@ -57,7 +57,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
                             }),
                             (0, f.jsx)(`span`, {
                               className: `block text-[10px] text-slate-400 tracking-widest uppercase`,
-                              children: `by SSAI Consultency`,
+                              children: `by Digital-tek`,
                             }),
                           ],
                         }),
@@ -145,7 +145,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
                   [`services`, `Social & Content`],
                 ]),
                 t(`Company`, [
-                  [`about`, `About SSAI Consultency`],
+                  [`about`, `About Digital-tek`],
                   [`contact`, `Contact Us`],
                   [`features`, `Why Not Shopify?`],
                 ]),
@@ -156,7 +156,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
               children: [
                 (0, f.jsx)(`p`, {
                   className: `text-xs text-slate-500`,
-                  children: `© 2026 SSAI Consultency Ltd. CommerceForce is our flagship product.`,
+                  children: `© 2026 Digital-tek Ltd. CommerceForce is our flagship product.`,
                 }),
                 (0, f.jsxs)(`div`, {
                   className: `flex items-center gap-5 text-xs text-slate-500`,

@@ -1,6 +1,6 @@
 import { React as l, jsx as f } from "../vendor/react.js";
 
-    // --- "About Us" page: why CommerceForce was built, SSAI Consultency background ---
+    // --- "About Us" page: why CommerceForce was built, Digital-tek background ---
     export function w({ onNavigate: e }) {
       return (0, f.jsxs)(`div`, {
         className: `bg-[#F8F7F4] min-h-screen`,
@@ -12,7 +12,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
               children: [
                 (0, f.jsx)(`p`, {
                   className: `text-amber-400 text-sm font-medium mb-3 uppercase tracking-widest`,
-                  children: `SSAI Consultency`,
+                  children: `Digital-tek`,
                 }),
                 (0, f.jsx)(`h1`, {
                   className: `text-5xl text-white mb-4`,
@@ -94,13 +94,13 @@ import { React as l, jsx as f } from "../vendor/react.js";
                           className: `w-16 h-16 bg-[#0F1C2E] rounded-full flex items-center justify-center mb-4`,
                           children: (0, f.jsx)(`span`, {
                             className: `text-amber-400 text-2xl font-bold`,
-                            children: `NS`,
+                            children: `DT`,
                           }),
                         }),
                         (0, f.jsx)(`h3`, {
                           className: `font-bold text-[#0F1C2E] text-lg mb-1`,
                           style: { fontFamily: `Inter, sans-serif` },
-                          children: `SSAI Consultency`,
+                          children: `Digital-tek`,
                         }),
                         (0, f.jsx)(`p`, {
                           className: `text-slate-400 text-sm mb-4`,

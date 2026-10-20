@@ -1,6 +1,6 @@
 import { React as l, jsx as f } from "../vendor/react.js";
 
-    // --- "Studio Services" page: other services SSAI Consultency offers beyond CommerceForce ---
+    // --- "Studio Services" page: other services Digital-tek offers beyond CommerceForce ---
     export function ie({ onNavigate: e }) {
       return (0, f.jsxs)(`div`, {
         className: `bg-[#F8F7F4] min-h-screen`,
@@ -12,7 +12,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
               children: [
                 (0, f.jsx)(`p`, {
                   className: `text-amber-400 text-sm font-medium mb-3 uppercase tracking-widest`,
-                  children: `SSAI Consultency`,
+                  children: `Digital-tek`,
                 }),
                 (0, f.jsx)(`h1`, {
                   className: `text-5xl text-white mb-4`,

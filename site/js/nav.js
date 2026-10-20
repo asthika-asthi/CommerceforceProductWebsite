@@ -21,7 +21,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
                 className: `opacity-70`,
                 children: [
                   `CommerceForce by `,
-                  (0, f.jsx)(`strong`, { children: `SSAI Consultency` }),
+                  (0, f.jsx)(`strong`, { children: `Digital-tek` }),
                   ` — built for trade, retail & service businesses`,
                 ],
               }),
@@ -66,7 +66,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
                       }),
                       (0, f.jsx)(`span`, {
                         className: `block text-[10px] text-slate-400 tracking-widest uppercase`,
-                        children: `by SSAI Consultency`,
+                        children: `by Digital-tek`,
                       }),
                     ],
                   }),
