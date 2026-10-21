@@ -1,6 +1,8 @@
-"""Local dev server for site/ that disables browser caching.
+"""Local dev server that disables browser caching.
 
-Usage: python serve.py [port]
+Usage: python serve.py [port] [folder]
+Defaults: port 8000, folder "site" (CommerceForce).
+For the Digital-tek site: python serve.py 8001 digital-tek-site
 """
 import sys
 from functools import partial
@@ -14,6 +16,7 @@ class NoCacheHandler(SimpleHTTPRequestHandler):
 
 
 port = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
-handler = partial(NoCacheHandler, directory="site")
-print(f"Serving site/ at http://localhost:{port} (no caching)")
+folder = sys.argv[2] if len(sys.argv) > 2 else "site"
+handler = partial(NoCacheHandler, directory=folder)
+print(f"Serving {folder}/ at http://localhost:{port} (no caching)")
 ThreadingHTTPServer(("", port), handler).serve_forever()

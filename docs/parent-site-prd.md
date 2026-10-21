@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Domain** | digital-tek.com |
+| **Domain** | digital-tek.co.uk |
 | **Brand name** | "Digital-tek" (the CommerceForce site now uses this name too, replacing "SSAI Consultency") |
 | **Status** | Draft v1 |
 | **Date** | 2026-10-21 |
@@ -204,9 +204,9 @@ WCAG 2.1 AA: colour contrast, visible focus states, keyboard navigation, alt tex
 ## 9. Technical approach
 
 - **Reuse the current pattern:** static site under a `site/`-style folder with one file per page, deployed to the VPS as described in [`deployment-procedure.md`](./deployment-procedure.md). No server changes are needed for new static files.
-- **Separate project folder** (or separate site directory) for digital-tek.com so the CommerceForce product site remains independent.
+- **Separate project folder** (or separate site directory) for digital-tek.co.uk so the CommerceForce product site remains independent.
 - **Shared content in data files:** services, products, case studies and testimonials live in simple data lists the pages read from.
-- **Hosting:** same VPS with a new server block for digital-tek.com; TLS certificate issued for the new domain; HTTP redirects to HTTPS; `www` and bare domain both resolve.
+- **Hosting:** same VPS with a new server block for digital-tek.co.uk; TLS certificate issued for the new domain; HTTP redirects to HTTPS; `www` and bare domain both resolve.
 - **Open technical decision:** keep the current React-bundle approach, or move to a simple static-site generator or plain HTML for better SEO and simpler editing (see section 13).
 
 ---
@@ -222,7 +222,7 @@ WCAG 2.1 AA: colour contrast, visible focus states, keyboard navigation, alt tex
 | 2 to 3 testimonials with permission | Founder / clients | v1 if available |
 | Team photos and bios | Team | About page |
 | Privacy, Terms and Cookie text | Founder / legal review | Before launch |
-| Domain DNS and TLS for digital-tek.com | Founder / ops | Before launch |
+| Domain DNS and TLS for digital-tek.co.uk | Founder / ops | Before launch |
 | Confirmed contact phone and email | Founder | Before launch |
 
 ---

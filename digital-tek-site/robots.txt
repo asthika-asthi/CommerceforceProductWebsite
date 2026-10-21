@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://digital-tek.co.uk/sitemap.xml
