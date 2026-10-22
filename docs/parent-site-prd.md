@@ -4,7 +4,7 @@
 |---|---|
 | **Domain** | digital-tek.co.uk |
 | **Brand name** | "Digital-tek" (the CommerceForce site now uses this name too, replacing "SSAI Consultency") |
-| **Status** | Draft v1.3 (Design & Creative pricing moved to a customer-facing page) |
+| **Status** | Draft v1.4 (Design & Creative added to the site; AI-generated wording required) |
 | **Date** | 2026-10-22 |
 | **Design inspiration** | https://akshatbahety.com/ |
 | **Related docs** | [`code-guide-for-non-programmers.md`](./code-guide-for-non-programmers.md), [`deployment-procedure.md`](./deployment-procedure.md), [`design-creative-how-it-works.md`](./design-creative-how-it-works.md) |
@@ -106,7 +106,7 @@ One overview page with a card per service and an anchor or sub-page for each. Co
 
 Each service section includes: promise, who it is for, what you get, a typical engagement shape (one-off project or monthly retainer), a related case study (when available), and a CTA.
 
-**Design & Creative notes.** This is a *supporting* service: it is sold on its own, but its main job is to complete the other four. Examples to show on the page: a leaflet that carries a client's website address and brand for a local campaign; refreshed graphics or a new logo for a website relaunch; a short AI-produced promo video for a product or CommerceForce store. The page should show real samples once available, because this is the most visual service and proof matters most here. Be honest about how it works: leaflets are delivered as print-ready PDFs (we do not print or ship); videos are mainly AI-produced and are labelled as such; client footage is edited only when unavoidable; we do not offer photography. Typical engagement: a fixed-scope package (see 5.2.1), or a monthly allowance of design hours.
+**Design & Creative notes.** This is a *supporting* service: it is sold on its own, but its main job is to complete the other four. Examples to show on the page: a leaflet that carries a client's website address and brand for a local campaign; refreshed graphics or a new logo for a website relaunch; a short AI-produced promo video for a product or CommerceForce store. The page should show real samples once available, because this is the most visual service and proof matters most here. Be honest about how it works: leaflets are delivered as print-ready PDFs (we do not print or ship); videos are mainly AI-generated and are labelled as such **on the Design & Creative section of the Services page, on the how-it-works page, and with an "AI-generated" label on every video sample**; client footage is edited only when unavoidable; we do not offer photography. Typical engagement: a fixed-scope package (see 5.2.1), or a monthly allowance of design hours.
 
 #### 5.2.1 Design & Creative: "How it works and pricing" page
 
@@ -116,7 +116,7 @@ Each service section includes: promise, who it is for, what you get, a typical e
 - **Linked from:** the Design & Creative section on the Services page ("How it works and pricing →"), the Contact page when Design & Creative is selected in the service dropdown, and every quote or proposal we send.
 - **Principle:** price what the client gets (the deliverable and a set number of rounds of changes), not the hours it takes. Every project gets a written quote after a free chat.
 - **What the page covers:** what we make (and don't: no photography, no printing, no filming), the seven-step process, rounds of changes per item, what counts as a round, extra rounds and changes of direction, launch packs and monthly design hours, payment, ownership including AI-made work, and a short FAQ.
-- **Acceptance criteria:** the page matches the document; contains no prices; links to the contact form with Design & Creative pre-selected; and is reachable from the Services page and the footer.
+- **Acceptance criteria:** the page matches the document; contains no prices; states that product videos are AI-generated; links to the contact form with Design & Creative pre-selected; and is reachable from the Services page and the footer.
 
 **Internal notes (not for the website):**
 - To set a price for a package, estimate the hours for a smooth job, multiply by the hourly rate, and add a **30 to 50% buffer** for normal feedback. Check against local competitors.

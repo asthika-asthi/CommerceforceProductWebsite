@@ -85,10 +85,12 @@
           '<article class="service-row" id="' + s.id + '"><div>' +
           '<span class="chip tint-' + s.tint + '" aria-hidden="true">' + s.icon + "</span>" +
           '<h2 style="margin-top:16px">' + h(s.title) + '</h2><p class="promise">' + h(s.promise) + "</p>" +
-          "<p>" + h(s.summary) + '</p><div class="btn-row"><a class="btn btn-primary" href="/contact/?service=' + s.id + '">Start a project</a></div></div>' +
+          "<p>" + h(s.summary) + '</p><div class="btn-row"><a class="btn btn-primary" href="/contact/?service=' + s.id + '">Start a project</a>' +
+          (s.more ? '<a class="btn btn-ghost" href="' + h(s.more.url) + '">' + h(s.more.label) + " →</a>" : "") +
+          "</div></div>" +
           '<div><h3 style="font-size:20px;margin-bottom:14px">What you get</h3><ul>' +
           s.offerings.map(function (o) { return "<li>" + h(o) + "</li>"; }).join("") +
-          "</ul></div></article>"
+          "</ul>" + (s.note ? '<p class="fine" style="margin-top:18px">' + h(s.note) + "</p>" : "") + "</div></article>"
         );
       }).join("");
     },

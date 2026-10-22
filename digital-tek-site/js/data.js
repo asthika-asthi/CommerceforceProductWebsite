@@ -81,6 +81,24 @@ window.DT = {
         "Brand voice guides",
       ],
     },
+    {
+      id: "design-creative",
+      icon: "◈",
+      tint: "lilac",
+      title: "Design & Creative",
+      promise: "Look as good as you work.",
+      summary:
+        "Supporting design for your website and campaigns: logos and branding, refreshed graphics, leaflets, animation and short product videos. Our product videos are AI-generated, and we say so up front.",
+      offerings: [
+        "Logo design and branding (colours, fonts, simple brand guide)",
+        "Graphics updates and refreshes for your website and social media",
+        "Promotional leaflets and flyers, supplied as print-ready PDFs",
+        "Animation, such as animated logos and graphics",
+        "AI-generated product videos to make your website better (we edit your own footage only when really needed)",
+      ],
+      note: "No photography, printing or filming. Every project is quoted in writing, with the number of changes included.",
+      more: { label: "How it works and pricing", url: "/services/design-creative/how-it-works/" },
+    },
   ],
 
   PRODUCTS: [
