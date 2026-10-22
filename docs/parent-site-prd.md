@@ -4,8 +4,8 @@
 |---|---|
 | **Domain** | digital-tek.co.uk |
 | **Brand name** | "Digital-tek" (the CommerceForce site now uses this name too, replacing "SSAI Consultency") |
-| **Status** | Draft v1 |
-| **Date** | 2026-10-21 |
+| **Status** | Draft v1.1 (adds Design & Creative service) |
+| **Date** | 2026-10-22 |
 | **Design inspiration** | https://akshatbahety.com/ |
 | **Related docs** | [`code-guide-for-non-programmers.md`](./code-guide-for-non-programmers.md), [`deployment-procedure.md`](./deployment-procedure.md) |
 
@@ -60,7 +60,8 @@ Home
 │   ├── AI Automation
 │   ├── Websites (non-commerce)
 │   ├── SEO & Growth
-│   └── Content & Social
+│   ├── Content & Social
+│   └── Design & Creative (graphics, leaflets, video)
 ├── Work (case studies)
 ├── Products
 │   └── CommerceForce (live, links to commerceforce.uk)
@@ -82,7 +83,7 @@ Home
 
 Sections, in order:
 1. **Hero.** Eyebrow chip (e.g. "AI · Web · Growth"), large serif headline with one italic highlighted word, one-sentence lede, two buttons: "Start a project" (primary) and "See our work" (ghost).
-2. **Services overview.** Four cards (see 5.2), each with a one-line promise and a link.
+2. **Services overview.** Five cards (see 5.2), each with a one-line promise and a link. Design & Creative is shown as the fifth card, framed as support for the other services.
 3. **Selected work.** Two or three case-study cards.
 4. **Products strip.** "Products we've built": CommerceForce card plus a "More coming" card.
 5. **Testimonials.** Two or three short quotes with name, role and company.
@@ -91,7 +92,7 @@ Sections, in order:
 
 **Acceptance criteria:** a first-time visitor can state what the company does within five seconds; both CTAs link to the contact page; the page passes the performance budget in section 8.
 
-### 5.2 Services (overview and four service sections)
+### 5.2 Services (overview and five service sections)
 One overview page with a card per service and an anchor or sub-page for each. Content for each comes from the existing studio services page:
 
 | Service | Promise | Key offerings |
@@ -100,10 +101,13 @@ One overview page with a card per service and an anchor or sub-page for each. Co
 | **Websites (non-commerce)** | Professional websites built fast with AI tooling | Service-business sites; corporate brochure sites; campaign landing pages; portfolio sites; migration from dated sites |
 | **SEO & Growth** | Get found. Then get more. | Technical SEO audit and on-page work; keyword research and content planning; Google Ads (PPC) management; GA4 setup and monthly reports; local SEO |
 | **Content & Social** | Words and posts that work for you | Product description copywriting; SEO-focused blog posts; social content and scheduling; email newsletters; brand voice guides |
+| **Design & Creative** (supporting service) | Look as good as you work | Graphics updates and refreshes (website images, banners, social graphics, brand assets); promotional leaflets and flyers that match your website, supplied print-ready; promotional, explainer and short social videos; and similar creative to support a launch or campaign (exact list to be confirmed, see section 13) |
 
 Each service section includes: promise, who it is for, what you get, a typical engagement shape (one-off project or monthly retainer), a related case study (when available), and a CTA.
 
-**Acceptance criteria:** all four services are present with the offerings above; each has a working "Start a project" link that pre-selects that service on the contact form.
+**Design & Creative notes.** This is a *supporting* service: it is sold on its own, but its main job is to complete the other four. Examples to show on the page: a leaflet that carries a client's website address and brand for a local campaign; refreshed graphics for a website relaunch; a short promo video for a new product or CommerceForce store. The page should show real samples (leaflets, graphics, video clips) once available, because this is the most visual service and proof matters most here. Typical engagement: one-off project, a fixed bundle (e.g. "launch pack"), or a monthly allowance of design hours.
+
+**Acceptance criteria:** all five services are present with the offerings above; each has a working "Start a project" link that pre-selects that service on the contact form.
 
 ### 5.3 Work (case studies)
 - Grid of case-study cards: title, one-line tagline, service tag, outcome metric.
@@ -221,6 +225,7 @@ WCAG 2.1 AA: colour contrast, visible focus states, keyboard navigation, alt tex
 | 3 to 5 case studies with results and permission to publish | Founder / clients | v2 (v1 can ship without) |
 | 2 to 3 testimonials with permission | Founder / clients | v1 if available |
 | Team photos and bios | Team | About page |
+| Design & Creative samples: 3 to 5 graphics, 2 leaflets, 1 to 2 short videos (client permission or our own work) | Team | Services page (v1 can launch with a "samples coming" note) |
 | Privacy, Terms and Cookie text | Founder / legal review | Before launch |
 | Domain DNS and TLS for digital-tek.co.uk | Founder / ops | Before launch |
 | Confirmed contact phone and email | Founder | Before launch |
@@ -244,7 +249,7 @@ WCAG 2.1 AA: colour contrast, visible focus states, keyboard navigation, alt tex
 
 | Phase | Scope |
 |---|---|
-| **v1: Launch** | Home, Services (all four), Products hub (CommerceForce live, placeholders), About, Contact form, legal pages, analytics, SEO basics, light/dark mode |
+| **v1: Launch** | Home, Services (all five), Products hub (CommerceForce live, placeholders), About, Contact form, legal pages, analytics, SEO basics, light/dark mode |
 | **v2: Proof** | Work / case studies, testimonials section populated, "Notify me" for coming-soon products, optional blog or insights |
 | **v3: Products** | Product detail template, a page per new product as each launches, optional pricing / packages page for services |
 
@@ -260,3 +265,7 @@ WCAG 2.1 AA: colour contrast, visible focus states, keyboard navigation, alt tex
 6. **Contact details.** Confirm the phone and email in the current site are right for the parent brand.
 7. **Differentiation from the reference.** The reference is a personal brand; ours is a company. We should use "we" language and avoid copying layout details one-to-one.
 8. **Scope of AI Automation claims.** Only publish capabilities and results we can back up with examples.
+9. **Design & Creative scope.** Confirm exactly what is offered: graphics updates, leaflets, videos, and anything else behind "etc." (logos and full branding? social media video editing? animation? photography?). The site should only list what we can deliver.
+10. **Print and video fulfilment.** Do we deliver leaflets as print-ready files only, or arrange printing too? Is video produced in-house (including filming) or edited from client footage? The About page says we do not subcontract, so any outsourced printing or filming must be described honestly (for example "we manage printing for you") rather than contradicting that claim.
+11. **Pricing shape for creative work.** Per-item prices, fixed bundles (such as a "launch pack"), or monthly design hours? Creative work is easy to scope-creep, so the service needs a clear revision policy (for example, two rounds of changes included).
+12. **Hosting heavy media.** Video samples add page weight and cost. Decide between embedding from a video platform and self-hosting short clips, so the Lighthouse performance budget (section 8) is still met.
