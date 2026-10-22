@@ -58,6 +58,18 @@
       '<button class="offer-close" id="offer-close" type="button" aria-label="Dismiss offer banner">×</button></div>'
     );
   }
+  function offerCallout() {
+    var s = offerState();
+    if (!s) return "";
+    var left = s.text.slice(s.text.indexOf("ends "));
+    return (
+      '<div class="offer-callout" role="region" aria-label="Special offer"><div>' +
+      '<span class="offer-tag">Limited-time offer</span>' +
+      "<h2>E-commerce websites: <em>special offer</em></h2>" +
+      "<p>Offer " + left + ". Free chat, written quote, no obligation.</p></div>" +
+      '<a class="btn btn-primary" href="' + h(s.o.href) + '">Claim the offer →</a></div>'
+    );
+  }
   function offerFab() {
     var s = offerState();
     if (!s || path().indexOf("/contact/") === 0) return "";
@@ -266,6 +278,7 @@
     var bottom = document.getElementById("site-footer");
     if (top) top.innerHTML = header();
     if (bottom) bottom.innerHTML = footer() + offerFab();
+    document.querySelectorAll("[data-offer]").forEach(function (el) { el.innerHTML = offerCallout(); });
     var oc = document.getElementById("offer-close");
     if (oc) oc.addEventListener("click", function () {
       try { sessionStorage.setItem("dt-offer-closed", "1"); } catch (e) {}
