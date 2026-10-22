@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digital-tek logo concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--serif:"Instrument Serif",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#f4eee3;color:#1a1f2e;font-family:var(--sans);line-height:1.5}
+.light{--bg:#fbf6ee;--ink:#1a1f2e;--peach:#f4c9b8;--peach-deep:#e8a598;--sky:#b8d4e0;--sand:#e8d4b8;--mint:#c8dcc8;--lilac:#d9cfe8;background:var(--bg);color:var(--ink)}
+.dark{--bg:#1a1d26;--ink:#f5eedc;--peach:#c97a6a;--peach-deep:#e8a598;--sky:#4e6e7a;--sand:#8a7856;--mint:#5a7060;--lilac:#6b5b86;background:var(--bg);color:var(--ink)}
+header.top,main{max-width:1100px;margin:0 auto;padding:0 20px}
+header.top{padding-top:40px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,6vw,56px);margin:0 0 8px}
+.lede{color:#4a5068;max-width:680px;margin:0 0 20px}
+.how{background:#fffdf8;border:1px solid #e4dccd;border-radius:14px;padding:14px 18px;margin-bottom:28px;font-size:15px}
+.how b{display:block;margin-bottom:4px}
+nav.jump{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+nav.jump a{padding:7px 14px;border-radius:99px;border:1px solid #cfc6b4;color:inherit;text-decoration:none;font-size:14px;background:#fffdf8}
+.card{background:#fffdf8;border:1px solid #e4dccd;border-radius:22px;padding:24px;margin-bottom:26px}
+.head{display:flex;gap:16px;align-items:flex-start;margin-bottom:18px}
+.num{flex:none;width:38px;height:38px;border-radius:50%;background:#1a1f2e;color:#fbf6ee;display:grid;place-items:center;font-weight:700}
+h2{font-family:var(--serif);font-weight:400;font-size:30px;margin:0}
+.head p{margin:2px 0 0;color:#4a5068}
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.panel{border-radius:16px;border:1px solid #e0d8c8;padding:30px 24px;min-height:150px;display:grid;place-items:center}
+.panel.dark{border-color:#000}
+.mini{min-height:0;padding:18px;justify-items:start;gap:10px}
+.cap{font-size:12px;color:#7a7f90;text-transform:uppercase;letter-spacing:.08em}
+.lock{display:flex;align-items:center;gap:14px}
+.lock.stacked{flex-direction:column;gap:12px}
+.lock .mk{width:78px;height:78px;flex:none}
+.lock.stacked .mk{width:84px;height:84px}
+.lock.inl .mk{width:36px;height:36px}
+.w{white-space:nowrap}
+.serif{font-family:var(--serif);font-style:italic;font-size:44px;line-height:1}
+.serif2{font-family:var(--serif);font-size:40px;line-height:1}
+.serif2 em{font-style:italic}
+.sans{font-family:var(--sans);font-weight:500;font-size:38px;letter-spacing:.02em;line-height:1}
+.big{font-size:64px}
+.badge-t{display:flex;flex-direction:column;gap:4px}
+.badge-t b{font-family:var(--sans);font-weight:700;font-size:26px;letter-spacing:.12em;line-height:1}
+.badge-t small{font-family:var(--sans);font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+.wm{font-style:normal;letter-spacing:-.01em;font-family:var(--serif)}
+.wm em{font-style:italic}
+.wm .hy{font-size:.8em;margin:0 2px}
+.ii{position:relative;display:inline-block}
+.spark{position:absolute;width:.5em;height:.5em;left:50%;top:.06em;transform:translateX(-50%);max-width:none}
+.spark path{fill:#e07a68}
+.inl .serif,.inl .sans,.inl .serif2{font-size:26px}
+.inl .big{font-size:30px}
+.inl .badge-t b{font-size:15px}.inl .badge-t small{display:none}
+.sizes{display:flex;align-items:flex-end;gap:22px}
+.sz{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:11px;color:#7a7f90}
+.s64{width:64px;height:64px}.s32{width:32px;height:32px}.s16{width:16px;height:16px}
+.navmock{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%}
+.pill{background:#1a1f2e;color:#fbf6ee;padding:8px 14px;border-radius:99px;font-size:13px;white-space:nowrap}
+dl{display:grid;grid-template-columns:90px 1fr;gap:4px 12px;margin:18px 0 0;font-size:15px}
+dt{font-weight:700}dd{margin:0}
+.feedback{background:#1a1f2e;color:#fbf6ee;border-radius:22px;padding:26px;margin-bottom:60px}
+.feedback h2{color:#fbf6ee}
+.feedback li{margin:6px 0}
+@media(max-width:760px){.panels,.row{grid-template-columns:1fr}.serif{font-size:34px}.sans{font-size:30px}.big{font-size:48px}dl{grid-template-columns:1fr}}
+</style></head><body>
+<header class="top"><h1>Digital-tek logo concepts</h1>
+<p class="lede">Five directions for the Digital-tek logo. Each is shown with the full name, on light and dark backgrounds, at small sizes, and in the website header.</p>
+<div class="how"><b>How to give feedback</b>Pick your favourite and your second choice, and note anything you’d change (colour, shape, weight, lettering). Please look at the small sizes too: a logo has to work as a tiny browser icon.</div>
+<nav class="jump"><a href="#c1">1 Lowercase d</a><a href="#c2">2 Connected Dots</a><a href="#c3">3 Pixel to Page</a><a href="#c4">4 Spark Wordmark</a><a href="#c5">5 Bold Badge</a></nav></header>
+<main>
+<section class="card" id="c1">
+  <div class="head"><span class="num">1</span><div><h2>The Lowercase d</h2><p>A simple “d”: a peach circle and a straight stem, with a small pixel square at the top.</p></div></div>
+  <div class="panels">
+    <div class="panel light"><div class="lock"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="38" r="15" fill="var(--peach)" stroke="var(--ink)" stroke-width="4"/><rect x="39" y="8" width="7" height="46" rx="3.5" fill="var(--ink)"/><rect x="29" y="8" width="7" height="7" rx="1.5" fill="var(--peach-deep)" stroke="var(--ink)" stroke-width="2"/></svg><span class="w serif">Digital-tek</span></div></div>
+    <div class="panel dark"><div class="lock"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="38" r="15" fill="var(--peach)" stroke="var(--ink)" stroke-width="4"/><rect x="39" y="8" width="7" height="46" rx="3.5" fill="var(--ink)"/><rect x="29" y="8" width="7" height="7" rx="1.5" fill="var(--peach-deep)" stroke="var(--ink)" stroke-width="2"/></svg><span class="w serif">Digital-tek</span></div></div>
+  </div>
+  <div class="row">
+    <div class="panel light mini"><div class="sizes"><div class="sz"><svg class="mk s64" viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="38" r="15" fill="var(--peach)" stroke="var(--ink)" stroke-width="4"/><rect x="39" y="8" width="7" height="46" rx="3.5" fill="var(--ink)"/><rect x="29" y="8" width="7" height="7" rx="1.5" fill="var(--peach-deep)" stroke="var(--ink)" stroke-width="2"/></svg><span>64 px</span></div><div class="sz"><svg class="mk s32" viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="38" r="15" fill="var(--peach)" stroke="var(--ink)" stroke-width="4"/><rect x="39" y="8" width="7" height="46" rx="3.5" fill="var(--ink)"/><rect x="29" y="8" width="7" height="7" rx="1.5" fill="var(--peach-deep)" stroke="var(--ink)" stroke-width="2"/></svg><span>32 px</span></div><div class="sz"><svg class="mk s16" viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="38" r="15" fill="var(--peach)" stroke="var(--ink)" stroke-width="4"/><rect x="39" y="8" width="7" height="46" rx="3.5" fill="var(--ink)"/><rect x="29" y="8" width="7" height="7" rx="1.5" fill="var(--peach-deep)" stroke="var(--ink)" stroke-width="2"/></svg><span>16 px</span></div></div><div class="cap">Small sizes</div></div>
+    <div class="panel light mini"><div class="navmock"><div class="lock inl"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="38" r="15" fill="var(--peach)" stroke="var(--ink)" stroke-width="4"/><rect x="39" y="8" width="7" height="46" rx="3.5" fill="var(--ink)"/><rect x="29" y="8" width="7" height="7" rx="1.5" fill="var(--peach-deep)" stroke="var(--ink)" stroke-width="2"/></svg><span class="w serif">Digital-tek</span></div><span class="pill">Start a project</span></div><div class="cap">In the website header</div></div>
+  </div>
+  <dl><dt>Best for</dt><dd>Favicon, app icon, social avatar.</dd><dt>Watch out</dt><dd>Quiet idea; the pixel detail is subtle.</dd></dl>
+</section>
+<section class="card" id="c2">
+  <div class="head"><span class="num">2</span><div><h2>Connected Dots</h2><p>A “d” made of three linked dots, standing for tools connecting through automation.</p></div></div>
+  <div class="panels">
+    <div class="panel light"><div class="lock"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg><span class="w sans">digital-tek</span></div></div>
+    <div class="panel dark"><div class="lock"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg><span class="w sans">digital-tek</span></div></div>
+  </div>
+  <div class="row">
+    <div class="panel light mini"><div class="sizes"><div class="sz"><svg class="mk s64" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg><span>64 px</span></div><div class="sz"><svg class="mk s32" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg><span>32 px</span></div><div class="sz"><svg class="mk s16" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg><span>16 px</span></div></div><div class="cap">Small sizes</div></div>
+    <div class="panel light mini"><div class="navmock"><div class="lock inl"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg><span class="w sans">digital-tek</span></div><span class="pill">Start a project</span></div><div class="cap">In the website header</div></div>
+  </div>
+  <dl><dt>Best for</dt><dd>Our AI automation and integrations story.</dd><dt>Watch out</dt><dd>Heavy outlines get busy at tiny sizes.</dd></dl>
+</section>
+<section class="card" id="c3">
+  <div class="head"><span class="num">3</span><div><h2>Pixel to Page</h2><p>Small pastel squares merging into one solid page: ideas becoming a finished website.</p></div></div>
+  <div class="panels">
+    <div class="panel light"><div class="lock stacked"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><rect x="23" y="23" width="39" height="39" rx="8" fill="var(--ink)"/><rect x="2" y="2" width="16" height="16" rx="4" fill="var(--sand)"/><rect x="23" y="2" width="16" height="16" rx="4" fill="var(--peach)"/><rect x="44" y="2" width="16" height="16" rx="4" fill="var(--sky)"/><rect x="2" y="23" width="16" height="16" rx="4" fill="var(--lilac)"/><rect x="2" y="44" width="16" height="16" rx="4" fill="var(--sand)"/></svg><span class="w serif2">Digital-<em>tek</em></span></div></div>
+    <div class="panel dark"><div class="lock stacked"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><rect x="23" y="23" width="39" height="39" rx="8" fill="var(--ink)"/><rect x="2" y="2" width="16" height="16" rx="4" fill="var(--sand)"/><rect x="23" y="2" width="16" height="16" rx="4" fill="var(--peach)"/><rect x="44" y="2" width="16" height="16" rx="4" fill="var(--sky)"/><rect x="2" y="23" width="16" height="16" rx="4" fill="var(--lilac)"/><rect x="2" y="44" width="16" height="16" rx="4" fill="var(--sand)"/></svg><span class="w serif2">Digital-<em>tek</em></span></div></div>
+  </div>
+  <div class="row">
+    <div class="panel light mini"><div class="sizes"><div class="sz"><svg class="mk s64" viewBox="0 0 64 64" aria-hidden="true"><rect x="23" y="23" width="39" height="39" rx="8" fill="var(--ink)"/><rect x="2" y="2" width="16" height="16" rx="4" fill="var(--sand)"/><rect x="23" y="2" width="16" height="16" rx="4" fill="var(--peach)"/><rect x="44" y="2" width="16" height="16" rx="4" fill="var(--sky)"/><rect x="2" y="23" width="16" height="16" rx="4" fill="var(--lilac)"/><rect x="2" y="44" width="16" height="16" rx="4" fill="var(--sand)"/></svg><span>64 px</span></div><div class="sz"><svg class="mk s32" viewBox="0 0 64 64" aria-hidden="true"><rect x="23" y="23" width="39" height="39" rx="8" fill="var(--ink)"/><rect x="2" y="2" width="16" height="16" rx="4" fill="var(--sand)"/><rect x="23" y="2" width="16" height="16" rx="4" fill="var(--peach)"/><rect x="44" y="2" width="16" height="16" rx="4" fill="var(--sky)"/><rect x="2" y="23" width="16" height="16" rx="4" fill="var(--lilac)"/><rect x="2" y="44" width="16" height="16" rx="4" fill="var(--sand)"/></svg><span>32 px</span></div><div class="sz"><svg class="mk s16" viewBox="0 0 64 64" aria-hidden="true"><rect x="23" y="23" width="39" height="39" rx="8" fill="var(--ink)"/><rect x="2" y="2" width="16" height="16" rx="4" fill="var(--sand)"/><rect x="23" y="2" width="16" height="16" rx="4" fill="var(--peach)"/><rect x="44" y="2" width="16" height="16" rx="4" fill="var(--sky)"/><rect x="2" y="23" width="16" height="16" rx="4" fill="var(--lilac)"/><rect x="2" y="44" width="16" height="16" rx="4" fill="var(--sand)"/></svg><span>16 px</span></div></div><div class="cap">Small sizes</div></div>
+    <div class="panel light mini"><div class="navmock"><div class="lock stacked inl"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><rect x="23" y="23" width="39" height="39" rx="8" fill="var(--ink)"/><rect x="2" y="2" width="16" height="16" rx="4" fill="var(--sand)"/><rect x="23" y="2" width="16" height="16" rx="4" fill="var(--peach)"/><rect x="44" y="2" width="16" height="16" rx="4" fill="var(--sky)"/><rect x="2" y="23" width="16" height="16" rx="4" fill="var(--lilac)"/><rect x="2" y="44" width="16" height="16" rx="4" fill="var(--sand)"/></svg><span class="w serif2">Digital-<em>tek</em></span></div><span class="pill">Start a project</span></div><div class="cap">In the website header</div></div>
+  </div>
+  <dl><dt>Best for</dt><dd>Websites and design; works as an app icon.</dd><dt>Watch out</dt><dd>Doesn’t read as a “d”, so it needs the wordmark.</dd></dl>
+</section>
+<section class="card" id="c4">
+  <div class="head"><span class="num">4</span><div><h2>The Spark Wordmark</h2><p>Type only: a serif “Digital”, an italic “tek” and a peach spark for the dot on the “i”.</p></div></div>
+  <div class="panels">
+    <div class="panel light"><div class="lock"><span class="w serif big"><span class="wm">Dig<span class="ii">ı<svg class="spark" viewBox="-10 -10 20 20" aria-hidden="true"><path d="M0 -10Q0 0 10 0Q0 0 0 10Q0 0 -10 0Q0 0 0 -10Z"/></svg></span>tal<span class="hy">-</span><em>tek</em></span></span></div></div>
+    <div class="panel dark"><div class="lock"><span class="w serif big"><span class="wm">Dig<span class="ii">ı<svg class="spark" viewBox="-10 -10 20 20" aria-hidden="true"><path d="M0 -10Q0 0 10 0Q0 0 0 10Q0 0 -10 0Q0 0 0 -10Z"/></svg></span>tal<span class="hy">-</span><em>tek</em></span></span></div></div>
+  </div>
+  <div class="row">
+    <div class="panel light mini"><div class="sizes"><div class="sz"><svg class="mk s64" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--peach)" stroke="var(--ink)" stroke-width="3"/><path d="M0 -10Q0 0 10 0Q0 0 0 10Q0 0 -10 0Q0 0 0 -10Z" transform="translate(32 32) scale(2.2)" fill="var(--ink)"/></svg><span>64 px</span></div><div class="sz"><svg class="mk s32" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--peach)" stroke="var(--ink)" stroke-width="3"/><path d="M0 -10Q0 0 10 0Q0 0 0 10Q0 0 -10 0Q0 0 0 -10Z" transform="translate(32 32) scale(2.2)" fill="var(--ink)"/></svg><span>32 px</span></div><div class="sz"><svg class="mk s16" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--peach)" stroke="var(--ink)" stroke-width="3"/><path d="M0 -10Q0 0 10 0Q0 0 0 10Q0 0 -10 0Q0 0 0 -10Z" transform="translate(32 32) scale(2.2)" fill="var(--ink)"/></svg><span>16 px</span></div></div><div class="cap">Small sizes</div></div>
+    <div class="panel light mini"><div class="navmock"><div class="lock inl"><span class="w serif big"><span class="wm">Dig<span class="ii">ı<svg class="spark" viewBox="-10 -10 20 20" aria-hidden="true"><path d="M0 -10Q0 0 10 0Q0 0 0 10Q0 0 -10 0Q0 0 0 -10Z"/></svg></span>tal<span class="hy">-</span><em>tek</em></span></span></div><span class="pill">Start a project</span></div><div class="cap">In the website header</div></div>
+  </div>
+  <dl><dt>Best for</dt><dd>Website header, documents, proposals.</dd><dt>Watch out</dt><dd>No standalone symbol; the favicon is a simple spark on a disc.</dd></dl>
+</section>
+<section class="card" id="c5">
+  <div class="head"><span class="num">5</span><div><h2>Bold Badge</h2><p>A compact dark badge with an interlocking “dt” and a pixel detail.</p></div></div>
+  <div class="panels">
+    <div class="panel light"><div class="lock"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--ink)"/><circle cx="32" cy="32" r="25" fill="none" stroke="var(--bg)" stroke-opacity=".35" stroke-width="1.5"/><g fill="none" stroke-width="5" stroke-linecap="round"><circle cx="25" cy="37" r="7" stroke="var(--peach)"/><path d="M32 20V44" stroke="var(--peach)"/><path d="M41 24V41Q41 45 45 45" stroke="var(--bg)"/><path d="M36.5 31H46" stroke="var(--bg)"/></g><rect x="46" y="8" width="7" height="7" rx="1.5" fill="var(--sky)"/></svg><span class="w badge-t"><b>DIGITAL-TEK</b><small>AI · Web · Creative</small></span></div></div>
+    <div class="panel dark"><div class="lock"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--ink)"/><circle cx="32" cy="32" r="25" fill="none" stroke="var(--bg)" stroke-opacity=".35" stroke-width="1.5"/><g fill="none" stroke-width="5" stroke-linecap="round"><circle cx="25" cy="37" r="7" stroke="var(--peach)"/><path d="M32 20V44" stroke="var(--peach)"/><path d="M41 24V41Q41 45 45 45" stroke="var(--bg)"/><path d="M36.5 31H46" stroke="var(--bg)"/></g><rect x="46" y="8" width="7" height="7" rx="1.5" fill="var(--sky)"/></svg><span class="w badge-t"><b>DIGITAL-TEK</b><small>AI · Web · Creative</small></span></div></div>
+  </div>
+  <div class="row">
+    <div class="panel light mini"><div class="sizes"><div class="sz"><svg class="mk s64" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--ink)"/><circle cx="32" cy="32" r="25" fill="none" stroke="var(--bg)" stroke-opacity=".35" stroke-width="1.5"/><g fill="none" stroke-width="5" stroke-linecap="round"><circle cx="25" cy="37" r="7" stroke="var(--peach)"/><path d="M32 20V44" stroke="var(--peach)"/><path d="M41 24V41Q41 45 45 45" stroke="var(--bg)"/><path d="M36.5 31H46" stroke="var(--bg)"/></g><rect x="46" y="8" width="7" height="7" rx="1.5" fill="var(--sky)"/></svg><span>64 px</span></div><div class="sz"><svg class="mk s32" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--ink)"/><circle cx="32" cy="32" r="25" fill="none" stroke="var(--bg)" stroke-opacity=".35" stroke-width="1.5"/><g fill="none" stroke-width="5" stroke-linecap="round"><circle cx="25" cy="37" r="7" stroke="var(--peach)"/><path d="M32 20V44" stroke="var(--peach)"/><path d="M41 24V41Q41 45 45 45" stroke="var(--bg)"/><path d="M36.5 31H46" stroke="var(--bg)"/></g><rect x="46" y="8" width="7" height="7" rx="1.5" fill="var(--sky)"/></svg><span>32 px</span></div><div class="sz"><svg class="mk s16" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--ink)"/><circle cx="32" cy="32" r="25" fill="none" stroke="var(--bg)" stroke-opacity=".35" stroke-width="1.5"/><g fill="none" stroke-width="5" stroke-linecap="round"><circle cx="25" cy="37" r="7" stroke="var(--peach)"/><path d="M32 20V44" stroke="var(--peach)"/><path d="M41 24V41Q41 45 45 45" stroke="var(--bg)"/><path d="M36.5 31H46" stroke="var(--bg)"/></g><rect x="46" y="8" width="7" height="7" rx="1.5" fill="var(--sky)"/></svg><span>16 px</span></div></div><div class="cap">Small sizes</div></div>
+    <div class="panel light mini"><div class="navmock"><div class="lock inl"><svg class="mk" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--ink)"/><circle cx="32" cy="32" r="25" fill="none" stroke="var(--bg)" stroke-opacity=".35" stroke-width="1.5"/><g fill="none" stroke-width="5" stroke-linecap="round"><circle cx="25" cy="37" r="7" stroke="var(--peach)"/><path d="M32 20V44" stroke="var(--peach)"/><path d="M41 24V41Q41 45 45 45" stroke="var(--bg)"/><path d="M36.5 31H46" stroke="var(--bg)"/></g><rect x="46" y="8" width="7" height="7" rx="1.5" fill="var(--sky)"/></svg><span class="w badge-t"><b>DIGITAL-TEK</b><small>AI · Web · Creative</small></span></div><span class="pill">Start a project</span></div><div class="cap">In the website header</div></div>
+  </div>
+  <dl><dt>Best for</dt><dd>Leaflets, video end-cards, stamps, profile pictures.</dd><dt>Watch out</dt><dd>The “dt” letters are hand-built shapes, not a typeface.</dd></dl>
+</section>
+<section class="feedback"><h2>Questions to think about</h2><ol>
+<li>Which one feels most like a company that builds automation, websites and creative work?</li>
+<li>Which one is still clear when it is tiny?</li>
+<li>Which one would you be happy to see on a leaflet, a video end-card and a website?</li>
+<li>Does anything look like another company’s logo you already know?</li></ol></section>
+</main></body></html>

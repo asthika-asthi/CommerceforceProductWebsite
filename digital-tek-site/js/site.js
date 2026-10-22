@@ -16,6 +16,8 @@
   // enquiries directly. While empty, the form opens the visitor's email app.
   var FORM_ENDPOINT = "";
 
+  var LOGO = '<svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg>';
+
   function h(s) {
     return String(s).replace(/[&<>"]/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
@@ -42,7 +44,7 @@
     return (
       '<a class="skip" href="#main">Skip to content</a>' +
       '<header class="topnav">' +
-      '<a class="logo" href="/" aria-label="Digital-tek home"><span class="logo-mark" aria-hidden="true">d</span>Digital-tek</a>' +
+      '<a class="logo" href="/" aria-label="Digital-tek home">' + LOGO + 'Digital-tek</a>' +
       '<ul class="nav-links" id="nav-links">' + links + "</ul>" +
       '<div class="nav-right">' +
       '<button class="icon-btn" id="theme-btn" type="button" aria-label="Toggle light and dark mode">◐</button>' +
@@ -55,7 +57,7 @@
     var c = D.company;
     return (
       '<footer><div class="wrap"><div class="foot-grid">' +
-      "<div><a class=\"logo\" href=\"/\"><span class=\"logo-mark\" aria-hidden=\"true\">d</span>Digital-tek</a>" +
+      "<div><a class=\"logo\" href=\"/\">" + LOGO + "Digital-tek</a>" +
       '<p style="color:var(--ink-soft);max-width:340px">AI automation, websites and growth for businesses that want results, not jargon.</p></div>' +
       "<div><h4>Explore</h4><ul>" +
       NAV.map(function (n) { return '<li><a href="' + n[0] + '">' + n[1] + "</a></li>"; }).join("") +
