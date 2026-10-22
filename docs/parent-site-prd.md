@@ -151,7 +151,7 @@ Each service section includes: promise, who it is for, what you get, a typical e
 
 ### 5.6 Contact / Start a project
 - Form fields: name, email, phone (optional), company, **service of interest** (dropdown plus "Not sure"), message.
-- Alternative contact: phone +44 7484129061, email aiasthika@gmail.com (as in the current site; confirm these before launch).
+- Alternative contact: phone +44 7484129061, email contact@digital-tek.co.uk (as in the current site; confirm these before launch).
 - Confirmation message after submission and an email notification to the team.
 - Spam protection (honeypot field or CAPTCHA).
 

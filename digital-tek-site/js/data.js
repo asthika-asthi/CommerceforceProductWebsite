@@ -11,7 +11,7 @@ window.DT = {
   company: {
     name: "Digital-tek",
     domain: "digital-tek.co.uk",
-    email: "aiasthika@gmail.com",
+    email: "contact@digital-tek.co.uk",
     phone: "+44 7484129061",
     phoneLink: "+447484129061",
   },
