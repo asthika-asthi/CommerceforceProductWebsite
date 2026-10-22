@@ -306,7 +306,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
                         ],
                       }),
                       (0, f.jsxs)(`a`, {
-                        href: `mailto:aiasthika@gmail.com`,
+                        href: `mailto:admin@commerceforce.uk`,
                         className: `flex items-center gap-3 text-slate-600 hover:text-amber-600 transition-colors`,
                         children: [
                           (0, f.jsx)(`div`, {
@@ -334,7 +334,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
                           }),
                           (0, f.jsx)(`span`, {
                             className: `text-sm`,
-                            children: `aiasthika@gmail.com`,
+                            children: `admin@commerceforce.uk`,
                           }),
                         ],
                       }),

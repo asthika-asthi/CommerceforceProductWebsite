@@ -115,9 +115,9 @@ import { React as l, jsx as f } from "../vendor/react.js";
                               ],
                             }),
                             (0, f.jsx)(`a`, {
-                              href: `mailto:aiasthika@gmail.com`,
+                              href: `mailto:admin@commerceforce.uk`,
                               className: `hover:text-amber-400 transition-colors`,
-                              children: `aiasthika@gmail.com`,
+                              children: `admin@commerceforce.uk`,
                             }),
                           ],
                         }),
