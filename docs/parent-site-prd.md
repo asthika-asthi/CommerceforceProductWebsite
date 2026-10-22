@@ -4,7 +4,7 @@
 |---|---|
 | **Domain** | digital-tek.co.uk |
 | **Brand name** | "Digital-tek" (the CommerceForce site now uses this name too, replacing "SSAI Consultency") |
-| **Status** | Draft v1.4 (Design & Creative added to the site; AI-generated wording required) |
+| **Status** | Draft v1.5 (v1 implemented in `digital-tek-site/`; see section 14) |
 | **Date** | 2026-10-22 |
 | **Design inspiration** | https://akshatbahety.com/ |
 | **Related docs** | [`code-guide-for-non-programmers.md`](./code-guide-for-non-programmers.md), [`deployment-procedure.md`](./deployment-procedure.md), [`design-creative-how-it-works.md`](./design-creative-how-it-works.md) |
@@ -289,3 +289,23 @@ WCAG 2.1 AA: colour contrast, visible focus states, keyboard navigation, alt tex
 10. **Print and video fulfilment: decided.** Leaflets are print-ready PDFs only (no printing or shipping). Videos are mainly AI-produced to promote products, and edited from client footage only when unavoidable. This keeps the "we don't subcontract" claim true. Copy should say videos are AI-produced, and the contract should cover who owns the AI-generated output and that the client confirms rights to any footage or assets they supply.
 11. **Pricing for creative work: decided.** No exact prices are published. Pricing is explained in the customer-facing document and web page (5.2.1). Still to confirm: that the proposed defaults (rounds per item, 7-day feedback window, half deposit) are the ones you want, and the legal wording for ownership of AI-generated work in the quote template.
 12. **Hosting heavy media: decided.** We host short clips ourselves, and only product videos that make the website better (not a general video portfolio). Keep each clip small (compressed MP4, muted autoplay loops under a few MB, poster image, lazy-loaded) so the Lighthouse performance budget (section 8) still holds. Check the VPS bandwidth if traffic grows.
+
+---
+
+## 14. Implementation status (v1)
+
+Built in `digital-tek-site/` as plain HTML, CSS and JavaScript. Items marked "needs you" cannot be finished without information or a decision from the founder.
+
+| Requirement | Status |
+|---|---|
+| Home, Services (five), Design & Creative how-it-works, Products hub, About, Contact | Done and live |
+| Product list in one data file (`js/data.js`) | Done |
+| Light/dark mode, page-enter motion, reduced-motion support | Done |
+| SEO: titles, descriptions, Open Graph, sitemap, robots, Organization markup (Home), Service markup (Services) | Done |
+| Contact form: validation, honeypot, service pre-selection, Design & Creative pricing link | Done; delivers by the visitor's email app until a form service is set (**needs you**: choose one and set `FORM_ENDPOINT` in `js/site.js`) |
+| Privacy, Terms, Cookie notice | Written for the site as it works today; **needs you**: confirm the legal entity name and have the text reviewed |
+| Analytics (GA4) with consent banner and events (form submit, CTA clicks, product clicks, CommerceForce referrals) | Done but switched off (**needs you**: set `GA_ID` in `js/site.js` to the GA4 measurement ID) |
+| Security headers | In `deploy/digital-tek.conf`; applied to the server when deployed. No Content-Security-Policy yet |
+| Design & Creative samples labelled "AI-generated" | **Needs you**: samples |
+| Work / case studies, testimonials, team photos | v2, content needed |
+| Logo | Concept 2 mark with an italic serif wordmark, applied to the header, footer and favicon |

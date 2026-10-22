@@ -16,6 +16,10 @@
   // enquiries directly. While empty, the form opens the visitor's email app.
   var FORM_ENDPOINT = "";
 
+  // Placeholder: paste the Google Analytics 4 measurement ID (looks like G-XXXXXXXXXX).
+  // While empty, no analytics is loaded and no cookie banner is shown.
+  var GA_ID = "";
+
   var LOGO = '<svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg>';
 
   function h(s) {
@@ -61,11 +65,12 @@
       '<p style="color:var(--ink-soft);max-width:340px">AI automation, websites and growth for businesses that want results, not jargon.</p></div>' +
       "<div><h4>Explore</h4><ul>" +
       NAV.map(function (n) { return '<li><a href="' + n[0] + '">' + n[1] + "</a></li>"; }).join("") +
+      '<li><a href="/services/design-creative/how-it-works/">How design projects work</a></li>' +
       '<li><a href="https://www.commerceforce.uk">CommerceForce</a></li></ul></div>' +
       "<div><h4>Talk to us</h4><ul>" +
       '<li><a href="mailto:' + h(c.email) + '">' + h(c.email) + "</a></li>" +
       '<li><a href="tel:' + h(c.phoneLink) + '">' + h(c.phone) + "</a></li>" +
-      '<li><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/cookies/">Cookies</a></li></ul></div>' +
+      '<li><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/cookies/">Cookies</a>' + (GA_ID ? ' · <button class="linklike" id="cookie-settings" type="button">Cookie settings</button>' : "") + "</li></ul></div>" +
       '</div><p class="fine">© ' + new Date().getFullYear() + " Digital-tek Ltd. CommerceForce is our first product.</p></div></footer>"
     );
   }
@@ -123,11 +128,63 @@
     },
   };
 
+  /* ---- Analytics (only after the visitor accepts) ---- */
+  function consent() { try { return localStorage.getItem("dt-consent"); } catch (e) { return null; } }
+  function setConsent(v) { try { localStorage.setItem("dt-consent", v); } catch (e) {} }
+  function track(name, params) { if (window.gtag) window.gtag("event", name, params || {}); }
+  function loadGA() {
+    if (!GA_ID || window.gtag) return;
+    var s = document.createElement("script");
+    s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", GA_ID, { anonymize_ip: true });
+  }
+  function banner() {
+    var old = document.getElementById("consent");
+    if (old) old.remove();
+    var b = document.createElement("div");
+    b.id = "consent"; b.className = "consent"; b.setAttribute("role", "dialog"); b.setAttribute("aria-label", "Cookie choices");
+    b.innerHTML = "<p>We would like to use Google Analytics to see which pages are useful. It sets cookies only if you accept. See our <a href=\"/cookies/\">cookie notice</a>.</p>" +
+      '<div class="btn-row"><button class="btn btn-primary" type="button" data-c="yes">Accept</button><button class="btn btn-ghost" type="button" data-c="no">Decline</button></div>';
+    b.addEventListener("click", function (e) {
+      var c = e.target.getAttribute && e.target.getAttribute("data-c");
+      if (!c) return;
+      setConsent(c); b.remove();
+      if (c === "yes") loadGA();
+    });
+    document.body.appendChild(b);
+  }
+  function initAnalytics() {
+    if (!GA_ID) return;
+    var c = consent();
+    if (c === "yes") loadGA(); else if (!c) banner();
+    var cs = document.getElementById("cookie-settings");
+    if (cs) cs.addEventListener("click", banner);
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("a");
+      if (!a) return;
+      var href = a.getAttribute("href") || "";
+      if (href.indexOf("commerceforce.uk") > -1) track("commerceforce_referral", { link_text: a.textContent.trim() });
+      else if (a.classList.contains("card") && href.indexOf("http") === 0) track("product_click", { product: href });
+      else if (href.indexOf("/contact") === 0) track("cta_click", { link_text: a.textContent.trim(), from: location.pathname });
+    });
+  }
+
   /* ---- Contact form ---- */
   function initForm(form) {
     var q = new URLSearchParams(location.search).get("service");
     if (q && form.service) form.service.value = q;
     var msg = document.getElementById("form-msg");
+    var hint = document.createElement("p");
+    hint.className = "fine"; hint.hidden = true;
+    hint.innerHTML = 'Before you send: <a href="/services/design-creative/how-it-works/">how Design &amp; Creative projects and pricing work</a>.';
+    form.service.parentNode.appendChild(hint);
+    function showHint() { hint.hidden = form.service.value !== "design-creative"; }
+    form.service.addEventListener("change", showHint);
+    showHint();
 
     function fail(field, text) {
       var e = document.getElementById("err-" + field.name);
@@ -144,6 +201,7 @@
       ok = fail(form.service, form.service.value ? "" : "Please pick a service.") && ok;
       ok = fail(form.message, form.message.value.trim() ? "" : "Please add a short message.") && ok;
       if (!ok) return;
+      track("form_submit", { service: form.service.value });
 
       var data = {
         name: form.name.value, email: form.email.value, phone: form.phone.value,
@@ -191,6 +249,7 @@
 
     var form = document.getElementById("contact-form");
     if (form) initForm(form);
+    initAnalytics();
 
     // Jump to a service when arriving with #anchor (content is built above).
     if (location.hash) {

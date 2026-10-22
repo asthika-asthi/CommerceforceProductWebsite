@@ -50,3 +50,13 @@ Open `css/style.css`. The colours are at the top under `:root` (light mode) and 
 ## Deploying
 
 See the deployment plan: the site goes to `/var/www/digital-tek/` on the VPS alongside CommerceForce, served by its own nginx block for `digital-tek.co.uk`.
+
+## Switching on analytics and the contact form
+
+Both are set near the top of `digital-tek-site/js/site.js`:
+
+- **Analytics:** paste your Google Analytics 4 measurement ID (it looks like `G-XXXXXXXXXX`) between the quotes of `GA_ID`. A cookie banner then appears for new visitors, and analytics loads only for those who accept. While it is empty, nothing is loaded and no banner shows.
+- **Contact form:** paste the address your form service gives you (for example from Formspree) between the quotes of `FORM_ENDPOINT`. While it is empty, the form opens the visitor's email app instead.
+
+Test both on your computer before uploading the changed file.
+
