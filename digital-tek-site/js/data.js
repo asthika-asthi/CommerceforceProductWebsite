@@ -16,6 +16,16 @@ window.DT = {
     phoneLink: "+447484129061",
   },
 
+  // The banner and "Claim the offer" button at the top and bottom of every page.
+  // They switch themselves off after endsOn (year-month-day). To end the offer
+  // sooner, change active to false. Keep wording true: say only what is real.
+  offer: {
+    active: true,
+    label: "Special offer on e-commerce websites",
+    endsOn: "2026-12-31",
+    href: "/contact/?offer=ecommerce",
+  },
+
   SERVICES: [
     {
       id: "ai-automation",
@@ -48,6 +58,7 @@ window.DT = {
         "Portfolio and showcase sites",
         "Migration from dated sites to modern, fast builds",
       ],
+      more: { label: "Online shops (e-commerce websites)", url: "/services/ecommerce-websites/" },
     },
     {
       id: "seo-growth",

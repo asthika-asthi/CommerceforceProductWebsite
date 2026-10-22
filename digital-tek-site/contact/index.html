@@ -11,6 +11,9 @@
 <meta property="og:title" content="Start a project | Contact Digital-tek">
 <meta property="og:description" content="Tell us about your project. Free, no-obligation chat about AI automation, websites, SEO or content.">
 <meta property="og:url" content="https://digital-tek.co.uk/contact/">
+<meta property="og:image" content="https://digital-tek.co.uk/og-image.png">
+<meta property="og:image:alt" content="Digital-tek: AI automation, websites and growth for businesses that want results, not jargon.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <script>try{var t=localStorage.getItem("dt-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +34,7 @@
 <label>Email <input name="email" type="email" autocomplete="email" required aria-describedby="err-email"><span class="err" id="err-email" role="alert"></span></label>
 <label>Phone (optional) <input name="phone" type="tel" autocomplete="tel"></label>
 <label>Company <input name="company" autocomplete="organization"></label>
-<label>Service of interest <select name="service" required aria-describedby="err-service" data-render="service-options"></select><span class="err" id="err-service" role="alert"></span></label>
+<label>Service of interest <select name="service" required aria-describedby="err-service" data-render="service-options"><!--r--><option value="">Select a service</option><option value="ai-automation">AI Automation</option><option value="websites">Websites</option><option value="seo-growth">SEO &amp; Growth</option><option value="content-social">Content &amp; Social</option><option value="design-creative">Design &amp; Creative</option><option value="not-sure">Not sure yet</option><!--/r--></select><span class="err" id="err-service" role="alert"></span></label>
 <label>Message <textarea name="message" required aria-describedby="err-message"></textarea><span class="err" id="err-message" role="alert"></span></label>
 <label class="hp" aria-hidden="true">Leave this empty <input name="website" tabindex="-1" autocomplete="off"></label>
 <div><button class="btn btn-primary" type="submit">Send message →</button></div>

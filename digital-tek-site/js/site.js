@@ -38,6 +38,32 @@
     try { localStorage.setItem("dt-theme", t); } catch (e) {}
   }
 
+  /* ---- Offer (banner and button; see "offer" in data.js) ---- */
+  function offerState() {
+    var o = D.offer;
+    if (!o || !o.active) return null;
+    var today = new Date().toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+    var days = Math.round((Date.parse(o.endsOn) - Date.parse(today)) / 864e5);
+    if (isNaN(days) || days < 0) return null;
+    var date = new Date(o.endsOn).toLocaleDateString("en-GB", { day: "numeric", month: "long", timeZone: "UTC" });
+    var left = days === 0 ? "ends today" : days === 1 ? "1 day left" : days + " days left";
+    return { o: o, text: h(o.label) + ": ends " + date + " (" + left + ")" };
+  }
+  function offerBar() {
+    var s = offerState();
+    try { if (!s || sessionStorage.getItem("dt-offer-closed")) return ""; } catch (e) { if (!s) return ""; }
+    return (
+      '<div class="offer-bar" role="region" aria-label="Special offer"><p>' + s.text +
+      '. <a href="' + h(s.o.href) + '">Get in touch today →</a></p>' +
+      '<button class="offer-close" id="offer-close" type="button" aria-label="Dismiss offer banner">×</button></div>'
+    );
+  }
+  function offerFab() {
+    var s = offerState();
+    if (!s || path().indexOf("/contact/") === 0) return "";
+    return '<a class="offer-fab btn btn-primary" href="' + h(s.o.href) + '">Claim the offer</a>';
+  }
+
   /* ---- Header / footer ---- */
   function header() {
     var cur = path();
@@ -46,7 +72,7 @@
       return '<li><a href="' + n[0] + '"' + on + ">" + n[1] + "</a></li>";
     }).join("");
     return (
-      '<a class="skip" href="#main">Skip to content</a>' +
+      '<a class="skip" href="#main">Skip to content</a>' + offerBar() +
       '<header class="topnav">' +
       '<a class="logo" href="/" aria-label="Digital-tek home">' + LOGO + 'Digital-tek</a>' +
       '<ul class="nav-links" id="nav-links">' + links + "</ul>" +
@@ -128,6 +154,9 @@
     },
   };
 
+  // Lets tools/prerender.js build the same HTML ahead of time, so search engines see it.
+  window.DT_RENDER = R;
+
   /* ---- Analytics (only after the visitor accepts) ---- */
   function consent() { try { return localStorage.getItem("dt-consent"); } catch (e) { return null; } }
   function setConsent(v) { try { localStorage.setItem("dt-consent", v); } catch (e) {} }
@@ -169,6 +198,7 @@
       var href = a.getAttribute("href") || "";
       if (href.indexOf("commerceforce.uk") > -1) track("commerceforce_referral", { link_text: a.textContent.trim() });
       else if (a.classList.contains("card") && href.indexOf("http") === 0) track("product_click", { product: href });
+      else if (href.indexOf("offer=") > -1) track("offer_cta_click", { link_text: a.textContent.trim(), from: location.pathname });
       else if (href.indexOf("/contact") === 0) track("cta_click", { link_text: a.textContent.trim(), from: location.pathname });
     });
   }
@@ -177,6 +207,12 @@
   function initForm(form) {
     var q = new URLSearchParams(location.search).get("service");
     if (q && form.service) form.service.value = q;
+    // Arriving from the offer banner: pick Websites and start the message.
+    var fromOffer = new URLSearchParams(location.search).get("offer") === "ecommerce" && offerState();
+    if (fromOffer) {
+      form.service.value = "websites";
+      if (!form.message.value) form.message.value = "I'm interested in the e-commerce website offer. ";
+    }
     var msg = document.getElementById("form-msg");
     var hint = document.createElement("p");
     hint.className = "fine"; hint.hidden = true;
@@ -201,7 +237,7 @@
       ok = fail(form.service, form.service.value ? "" : "Please pick a service.") && ok;
       ok = fail(form.message, form.message.value.trim() ? "" : "Please add a short message.") && ok;
       if (!ok) return;
-      track("form_submit", { service: form.service.value });
+      track("form_submit", { service: form.service.value, offer: fromOffer ? "ecommerce" : "" });
 
       var data = {
         name: form.name.value, email: form.email.value, phone: form.phone.value,
@@ -229,7 +265,12 @@
     var top = document.getElementById("site-header");
     var bottom = document.getElementById("site-footer");
     if (top) top.innerHTML = header();
-    if (bottom) bottom.innerHTML = footer();
+    if (bottom) bottom.innerHTML = footer() + offerFab();
+    var oc = document.getElementById("offer-close");
+    if (oc) oc.addEventListener("click", function () {
+      try { sessionStorage.setItem("dt-offer-closed", "1"); } catch (e) {}
+      oc.parentNode.remove();
+    });
 
     document.querySelectorAll("[data-render]").forEach(function (el) {
       var fn = R[el.getAttribute("data-render")];

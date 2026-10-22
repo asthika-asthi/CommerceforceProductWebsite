@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://digital-tek.co.uk/</loc></url>
-  <url><loc>https://digital-tek.co.uk/services/</loc></url>
-  <url><loc>https://digital-tek.co.uk/services/design-creative/how-it-works/</loc></url>
-  <url><loc>https://digital-tek.co.uk/products/</loc></url>
-  <url><loc>https://digital-tek.co.uk/about/</loc></url>
-  <url><loc>https://digital-tek.co.uk/contact/</loc></url>
-  <url><loc>https://digital-tek.co.uk/privacy/</loc></url>
-  <url><loc>https://digital-tek.co.uk/terms/</loc></url>
-  <url><loc>https://digital-tek.co.uk/cookies/</loc></url>
+  <url><loc>https://digital-tek.co.uk/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://digital-tek.co.uk/services/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://digital-tek.co.uk/services/ecommerce-websites/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://digital-tek.co.uk/services/design-creative/how-it-works/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://digital-tek.co.uk/products/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://digital-tek.co.uk/about/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://digital-tek.co.uk/contact/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://digital-tek.co.uk/privacy/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://digital-tek.co.uk/terms/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://digital-tek.co.uk/cookies/</loc><lastmod>2026-10-22</lastmod></url>
 </urlset>
