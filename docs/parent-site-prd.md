@@ -4,10 +4,10 @@
 |---|---|
 | **Domain** | digital-tek.co.uk |
 | **Brand name** | "Digital-tek" (the CommerceForce site now uses this name too, replacing "SSAI Consultency") |
-| **Status** | Draft v1.2 (Design & Creative scope and pricing guidance added) |
+| **Status** | Draft v1.3 (Design & Creative pricing moved to a customer-facing page) |
 | **Date** | 2026-10-22 |
 | **Design inspiration** | https://akshatbahety.com/ |
-| **Related docs** | [`code-guide-for-non-programmers.md`](./code-guide-for-non-programmers.md), [`deployment-procedure.md`](./deployment-procedure.md) |
+| **Related docs** | [`code-guide-for-non-programmers.md`](./code-guide-for-non-programmers.md), [`deployment-procedure.md`](./deployment-procedure.md), [`design-creative-how-it-works.md`](./design-creative-how-it-works.md) |
 
 ---
 
@@ -61,7 +61,8 @@ Home
 │   ├── Websites (non-commerce)
 │   ├── SEO & Growth
 │   ├── Content & Social
-│   └── Design & Creative (graphics, leaflets, video)
+│   └── Design & Creative (logos, branding, graphics, leaflets, animation, video)
+│       └── How it works and pricing (no prices; see 5.2.1)
 ├── Work (case studies)
 ├── Products
 │   └── CommerceForce (live, links to commerceforce.uk)
@@ -101,44 +102,29 @@ One overview page with a card per service and an anchor or sub-page for each. Co
 | **Websites (non-commerce)** | Professional websites built fast with AI tooling | Service-business sites; corporate brochure sites; campaign landing pages; portfolio sites; migration from dated sites |
 | **SEO & Growth** | Get found. Then get more. | Technical SEO audit and on-page work; keyword research and content planning; Google Ads (PPC) management; GA4 setup and monthly reports; local SEO |
 | **Content & Social** | Words and posts that work for you | Product description copywriting; SEO-focused blog posts; social content and scheduling; email newsletters; brand voice guides |
-| **Design & Creative** (supporting service) | Look as good as you work | Logo design and branding (colours, fonts, simple brand guide); graphics updates and refreshes (website images, banners, social graphics); promotional leaflets and flyers that match your website, supplied as print-ready PDFs; animation (logo animations, animated graphics); promotional videos for products, mainly AI-produced, or edited from client footage where unavoidable. Not offered: photography, printing, filming |
+| **Design & Creative** (supporting service) | Look as good as you work | Logo design and branding (colours, fonts, simple brand guide); graphics updates and refreshes (website images, banners, social graphics); promotional leaflets and flyers that match your website, supplied as print-ready PDFs; animation (logo animations, animated graphics); promotional videos for products, mainly AI-produced, or edited from client footage where unavoidable. Not offered: photography, printing, filming. Priced by written quote; see 5.2.1 |
 
 Each service section includes: promise, who it is for, what you get, a typical engagement shape (one-off project or monthly retainer), a related case study (when available), and a CTA.
 
 **Design & Creative notes.** This is a *supporting* service: it is sold on its own, but its main job is to complete the other four. Examples to show on the page: a leaflet that carries a client's website address and brand for a local campaign; refreshed graphics or a new logo for a website relaunch; a short AI-produced promo video for a product or CommerceForce store. The page should show real samples once available, because this is the most visual service and proof matters most here. Be honest about how it works: leaflets are delivered as print-ready PDFs (we do not print or ship); videos are mainly AI-produced and are labelled as such; client footage is edited only when unavoidable; we do not offer photography. Typical engagement: a fixed-scope package (see 5.2.1), or a monthly allowance of design hours.
 
-#### 5.2.1 Design & Creative: scoping and pricing guidance
+#### 5.2.1 Design & Creative: "How it works and pricing" page
 
-The risk with creative work is not the price of the first version; it is open-ended revisions from clients who keep changing their mind. The rule that protects margin is: **price the deliverable and the number of revision rounds, never the open-ended effort.**
+**No prices are published.** Instead, the service has a customer-facing explainer that sets expectations and protects both sides. The full text is in [`design-creative-how-it-works.md`](./design-creative-how-it-works.md), and it is the source for the web page.
 
-**Packages (fixed scope, fixed price, fixed revisions)**
+- **URL:** `/services/design-creative/how-it-works/` (a sub-page of Services).
+- **Linked from:** the Design & Creative section on the Services page ("How it works and pricing →"), the Contact page when Design & Creative is selected in the service dropdown, and every quote or proposal we send.
+- **Principle:** price what the client gets (the deliverable and a set number of rounds of changes), not the hours it takes. Every project gets a written quote after a free chat.
+- **What the page covers:** what we make (and don't: no photography, no printing, no filming), the seven-step process, rounds of changes per item, what counts as a round, extra rounds and changes of direction, launch packs and monthly design hours, payment, ownership including AI-made work, and a short FAQ.
+- **Acceptance criteria:** the page matches the document; contains no prices; links to the contact form with Design & Creative pre-selected; and is reachable from the Services page and the footer.
 
-| Package | What is included | Revision rounds included |
-|---|---|---|
-| **Graphics refresh** | A set number of graphics (for example 5 website or social images) | 2 rounds |
-| **Leaflet / flyer** | One design, front and back, print-ready PDF | 2 rounds |
-| **Logo and branding** | 2 or 3 initial logo directions, one chosen and refined, colours, fonts, one-page brand guide | 3 rounds on the chosen direction (the first round chooses the direction and does not count) |
-| **Animation** | One short animation (such as an animated logo or one animated graphic), length and format agreed up front | 2 rounds, on the storyboard or draft, before final render |
-| **Product promo video (AI-produced)** | One short video (for example 15 to 30 seconds) for one product, script and style agreed up front | 2 rounds on the script and draft before final render |
-| **Launch pack** | A bundle, for example logo refresh, leaflet, and one promo video | Rounds per item as above |
-
-Prices for each package are for the founder to set (see open question 11). A practical way to set them: estimate the hours for a smooth job, multiply by your hourly rate, then add a **30 to 50% buffer** for normal feedback. Check the result against what local competitors charge.
-
-**Rules that keep fussy clients manageable (put these in every proposal and show a short version on the site)**
-1. **Written brief and sign-off first.** The client approves a one-page brief (what, who for, style, formats, deadline) before work starts. Anything outside it is a new quote.
-2. **Deposit up front** (for example 50%), balance before final files are released. Final files and source files are released only on full payment.
-3. **Revisions are counted.** The included rounds are written in the quote. A round means one *consolidated* set of changes from a single named decision-maker, not feedback arriving in pieces.
-4. **Extra rounds are charged** at a stated hourly rate or a small fixed fee per round, quoted before the work is done. This is usually enough on its own to stop endless tweaking.
-5. **Changing direction is a new job.** Switching to a different concept, style or message after approval of the draft is quoted separately.
-6. **Time-limited feedback.** Feedback is due within a set period (for example 7 days). After that, the project pauses, and a restart fee or booking slot applies.
-7. **Final approval is final.** After approval and payment, further changes are a new quote.
-8. **Know when to stop.** If a client has used all included rounds and is still unhappy, offer a choice: pay for extra rounds, or part ways with a pro-rata charge for the work done.
-
-**Monthly option:** a retainer of design hours (for example 5, 10 or 20 hours a month) suits clients with steady small jobs. Unused hours do not roll over, and requests are worked in the order received. It is predictable income for us, and the client gets a cap on cost.
-
-**Qualifying clients:** the free-chat step on the Contact page should ask what the client wants and how many people must approve it. Several decision-makers is the biggest warning sign, so quote more rounds, or require one named approver.
-
-**On the website:** show package names and "from" prices (or "get a quote" if the founder prefers), say plainly "includes 2 rounds of changes", and link to a short "How revisions work" explainer. This filters out difficult clients before they enquire.
+**Internal notes (not for the website):**
+- To set a price for a package, estimate the hours for a smooth job, multiply by the hourly rate, and add a **30 to 50% buffer** for normal feedback. Check against local competitors.
+- Always get the written brief signed off and the deposit paid before starting. Release final and source files only on full payment.
+- On the free chat, ask how many people must approve the work. Several decision-makers is the biggest warning sign: require one named approver, or quote extra rounds.
+- Extra rounds are quoted before the work is done, so the client chooses. This is usually enough to stop endless tweaking.
+- If a client is still unhappy after all rounds, offer a choice: pay for extra rounds, or stop with a pro-rata charge for work done.
+- The round counts, the 7-day feedback window and the "usually half" deposit in the customer document are proposed defaults. Change them in both places if you decide differently.
 
 **Acceptance criteria:** all five services are present with the offerings above; each has a working "Start a project" link that pre-selects that service on the contact form.
 
@@ -258,6 +244,7 @@ WCAG 2.1 AA: colour contrast, visible focus states, keyboard navigation, alt tex
 | 3 to 5 case studies with results and permission to publish | Founder / clients | v2 (v1 can ship without) |
 | 2 to 3 testimonials with permission | Founder / clients | v1 if available |
 | Team photos and bios | Team | About page |
+| Review and approve `design-creative-how-it-works.md` (customer-facing pricing and process page) | Founder | Before the Design & Creative page is built |
 | Design & Creative samples: 3 to 5 graphics, 2 leaflets, 1 to 2 short videos (client permission or our own work) | Team | Services page (v1 can launch with a "samples coming" note) |
 | Privacy, Terms and Cookie text | Founder / legal review | Before launch |
 | Domain DNS and TLS for digital-tek.co.uk | Founder / ops | Before launch |
@@ -300,5 +287,5 @@ WCAG 2.1 AA: colour contrast, visible focus states, keyboard navigation, alt tex
 8. **Scope of AI Automation claims.** Only publish capabilities and results we can back up with examples.
 9. **Design & Creative scope: decided.** Logos, branding and animation are in; photography is out. The site lists only these.
 10. **Print and video fulfilment: decided.** Leaflets are print-ready PDFs only (no printing or shipping). Videos are mainly AI-produced to promote products, and edited from client footage only when unavoidable. This keeps the "we don't subcontract" claim true. Copy should say videos are AI-produced, and the contract should cover who owns the AI-generated output and that the client confirms rights to any footage or assets they supply.
-11. **Pricing numbers for creative work.** The structure is proposed in 5.2.1 (fixed-scope packages with counted revisions, deposit, charged extra rounds, optional monthly hours). The founder still needs to set the actual prices and hourly rate for extra rounds, decide whether to show "from" prices on the site, and have the revision terms checked for the proposal template.
+11. **Pricing for creative work: decided.** No exact prices are published. Pricing is explained in the customer-facing document and web page (5.2.1). Still to confirm: that the proposed defaults (rounds per item, 7-day feedback window, half deposit) are the ones you want, and the legal wording for ownership of AI-generated work in the quote template.
 12. **Hosting heavy media: decided.** We host short clips ourselves, and only product videos that make the website better (not a general video portfolio). Keep each clip small (compressed MP4, muted autoplay loops under a few MB, poster image, lazy-loaded) so the Lighthouse performance budget (section 8) still holds. Check the VPS bandwidth if traffic grows.
