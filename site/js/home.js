@@ -249,9 +249,9 @@ import { React as l, jsx as f } from "../vendor/react.js";
                         children: [
                           `Or call us: `,
                           (0, f.jsx)(`a`, {
-                            href: `tel:+447484129061`,
+                            href: `tel:+447845441003`,
                             className: `text-slate-400 hover:text-amber-400 transition-colors`,
-                            children: `+44 7484 129061`,
+                            children: `+44 7845 441003`,
                           }),
                         ],
                       }),
@@ -1086,9 +1086,9 @@ import { React as l, jsx as f } from "../vendor/react.js";
                       children: `Book a free demo`,
                     }),
                     (0, f.jsx)(`a`, {
-                      href: `tel:+447484129061`,
+                      href: `tel:+447845441003`,
                       className: `border-2 border-[#0F1C2E] text-[#0F1C2E] font-semibold px-8 py-3 rounded-lg hover:bg-[#0F1C2E]/10 transition-colors inline-block`,
-                      children: `Call +44 7484 129061`,
+                      children: `Call +44 7845 441003`,
                     }),
                   ],
                 }),

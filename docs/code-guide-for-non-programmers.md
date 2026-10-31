@@ -77,7 +77,7 @@ To change what a visitor reads:
    that one file — e.g. to change a price, open `js/pricing.js` instead
    of searching a 19,000-line file.
 2. Use **Find** (Ctrl+F) inside that file for the exact words currently
-   shown (e.g. `Simple, honest pricing` or `+447484129061`).
+   shown (e.g. `Simple, honest pricing` or `+447845441003`).
 3. Change only the text between the backticks (`` ` ``). Leave the
    backticks, commas, curly braces `{ }`, and `function`/`import`/`export`
    lines exactly as they are — those hold the page together, and an
@@ -108,7 +108,7 @@ line in their file rather than inside it.
 
 The phone number and email address appear in a few places: the top
 banner (`nav.js`), the bottom of every page (`footer.js`), and the
-contact page (`contact.js`). Searching for `447484129061` or
+contact page (`contact.js`). Searching for `447845441003` or
 `aiasthika@gmail.com` across the `js/` folder will find every spot.
 
 ## Where this lives once published

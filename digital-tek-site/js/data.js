@@ -12,8 +12,8 @@ window.DT = {
     name: "Digital-tek",
     domain: "digital-tek.co.uk",
     email: "contact@digital-tek.co.uk",
-    phone: "+44 7484129061",
-    phoneLink: "+447484129061",
+    phone: "+44 7845441003",
+    phoneLink: "+447845441003",
   },
 
   // The banner and "Claim the offer" button at the top and bottom of every page.
