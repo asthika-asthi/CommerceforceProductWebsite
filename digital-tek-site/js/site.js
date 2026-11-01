@@ -192,7 +192,7 @@
     if (old) old.remove();
     var b = document.createElement("div");
     b.id = "consent"; b.className = "consent"; b.setAttribute("role", "dialog"); b.setAttribute("aria-label", "Cookie choices");
-    b.innerHTML = "<p>We would like to use Google Analytics to see which pages are useful. It sets cookies only if you accept. See our <a href=\"/cookies/\">cookie notice</a>.</p>" +
+    b.innerHTML = "<p>We use cookies</p>" +
       '<div class="btn-row"><button class="btn btn-primary" type="button" data-c="yes">Accept</button><button class="btn btn-ghost" type="button" data-c="no">Decline</button></div>';
     b.addEventListener("click", function (e) {
       var c = e.target.getAttribute && e.target.getAttribute("data-c");
