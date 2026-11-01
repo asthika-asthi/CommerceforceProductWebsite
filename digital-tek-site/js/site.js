@@ -18,7 +18,7 @@
 
   // Placeholder: paste the Google Analytics 4 measurement ID (looks like G-XXXXXXXXXX).
   // While empty, no analytics is loaded and no cookie banner is shown.
-  var GA_ID = "";
+  var GA_ID = "G-SPZZGLQJ0C";
 
   var LOGO = '<svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg>';
 
