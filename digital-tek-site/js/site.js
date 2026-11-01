@@ -18,6 +18,7 @@
 
   // Placeholder: paste the Google Analytics 4 measurement ID (looks like G-XXXXXXXXXX).
   // While empty, no analytics is loaded and no cookie banner is shown.
+  // Uses Google Consent Mode: the tag loads but sets no cookies until the visitor accepts.
   var GA_ID = "G-SPZZGLQJ0C";
 
   var LOGO = '<svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"><circle cx="32" cy="38" r="14"/><path d="M46 12V52"/></g><g stroke="var(--ink)" stroke-width="3"><circle cx="18" cy="38" r="7" fill="var(--peach-deep)"/><circle cx="46" cy="12" r="7" fill="var(--sky)"/><circle cx="46" cy="52" r="7" fill="var(--mint)"/></g></svg>';
@@ -180,9 +181,12 @@
     document.head.appendChild(s);
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
+    // Consent Mode: storage is denied until the visitor accepts (no cookies set).
+    window.gtag("consent", "default", { analytics_storage: "denied", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", wait_for_update: 500 });
     window.gtag("js", new Date());
     window.gtag("config", GA_ID, { anonymize_ip: true });
   }
+  function grantGA() { loadGA(); window.gtag("consent", "update", { analytics_storage: "granted" }); }
   function banner() {
     var old = document.getElementById("consent");
     if (old) old.remove();
@@ -194,14 +198,15 @@
       var c = e.target.getAttribute && e.target.getAttribute("data-c");
       if (!c) return;
       setConsent(c); b.remove();
-      if (c === "yes") loadGA();
+      if (c === "yes") grantGA();
     });
     document.body.appendChild(b);
   }
   function initAnalytics() {
     if (!GA_ID) return;
     var c = consent();
-    if (c === "yes") loadGA(); else if (!c) banner();
+    loadGA();
+    if (c === "yes") grantGA(); else if (!c) banner();
     var cs = document.getElementById("cookie-settings");
     if (cs) cs.addEventListener("click", banner);
     document.addEventListener("click", function (e) {
