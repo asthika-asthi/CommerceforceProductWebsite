@@ -171,6 +171,7 @@ import { React as l, jsx as f } from "../vendor/react.js";
                     }),
                     (0, f.jsx)(`button`, {
                       className: `hover:text-slate-300 transition-colors`,
+                      onClick: () => window.dispatchEvent(new Event(`cf-cookie-settings`)),
                       children: `Cookie Settings`,
                     }),
                   ],
