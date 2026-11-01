@@ -19,7 +19,7 @@
     b.setAttribute("role", "dialog");
     b.setAttribute("aria-label", "Cookie choices");
     b.innerHTML =
-      "<p>We would like to use Google Analytics to see which pages are useful. It sets cookies only if you accept.</p>" +
+      "<p>We use cookies</p>" +
       '<div class="cf-consent-btns"><button type="button" data-c="yes">Accept</button><button type="button" data-c="no">Decline</button></div>';
     b.addEventListener("click", function (e) {
       var c = e.target.getAttribute && e.target.getAttribute("data-c");
